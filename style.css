@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#000;
+    color:#FFD700;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.8;
+}
+
+header{
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(180deg,#111,#000);
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.bloco{
+    margin:40px 0;
+    text-align:center;
+    animation: aparecer 1s ease;
+}
+
+.texto{
+    padding:20px;
+}
+
+.texto h2{
+    margin-bottom:15px;
+    font-size:2rem;
+}
+
+.texto p{
+    font-size:1.2rem;
+}
+
+img{
+    width:100%;
+    max-width:900px;
+    border-radius:15px;
+    border:3px solid #FFD700;
+    box-shadow:0 0 20px rgba(255,215,0,0.4);
+}
+
+.destaque{
+    background:#111;
+    padding:30px;
+    border-radius:15px;
+    border:2px solid #FFD700;
+}
+
+button{
+    margin-top:20px;
+    padding:15px 25px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#FFD700;
+    color:#000;
+    font-weight:bold;
+    font-size:1rem;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:#ffea70;
+}
+
+#mensagem{
+    margin-top:20px;
+    font-weight:bold;
+    font-size:1.2rem;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+    border-top:2px solid #FFD700;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* TABLET */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.2rem;
+    }
+
+    .texto h2{
+        font-size:1.6rem;
+    }
+
+    .texto p{
+        font-size:1rem;
+    }
+}
+
+/* CELULAR */
+
+@media(max-width:480px){
+
+    header{
+        padding:30px 15px;
+    }
+
+    header h1{
+        font-size:1.8rem;
+    }
+
+    header p{
+        font-size:1rem;
+    }
+
+    .texto h2{
+        font-size:1.4rem;
+    }
+
+    .texto p{
+        font-size:0.95rem;
+    }
+
+    button{
+        width:100%;
+    }
+}
